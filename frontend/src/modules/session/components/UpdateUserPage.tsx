@@ -1,13 +1,13 @@
+import { Box, Card, Grid, makeStyles, TextField } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { Box, Card, Grid, TextField, makeStyles } from '@material-ui/core';
-import * as Yup from 'yup';
-
 import SimpleForm, { FormMetadataType } from 'src/components/SimpleForm';
 import DefaultPage from 'src/modules/home/components/DefaultPage';
 import { UserData } from 'src/types/user';
 import { handleApiRequest } from 'src/utils/ui';
+import * as Yup from 'yup';
+
 import { updateUser } from '../operations';
 import { getCurrentUser } from '../selectors';
 

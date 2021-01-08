@@ -1,9 +1,9 @@
+import { loadingBarReducer } from 'react-redux-loading-bar';
 import { applyMiddleware, combineReducers, createStore, Middleware, Reducer } from 'redux';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
-import { loadingBarReducer } from 'react-redux-loading-bar';
-
 import { AppState } from 'src/types';
+
 import notificationsReducer from './notifications';
 import sessionReducer from './session';
 

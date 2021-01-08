@@ -1,6 +1,6 @@
 import * as colors from '@material-ui/core/colors';
 
-import { black, white, blue, green } from './colors';
+import { black, blue, green, white } from './colors';
 
 const palette = {
   common: {

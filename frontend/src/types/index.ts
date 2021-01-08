@@ -1,6 +1,5 @@
 import { Action, AnyAction } from 'redux';
 import { ThunkAction, ThunkDispatch } from 'redux-thunk';
-
 import { types as notifications } from 'src/modules/notifications';
 import { types as session } from 'src/modules/session';
 

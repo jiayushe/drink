@@ -1,12 +1,11 @@
+import { Box, Card, Grid, makeStyles, TextField } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { Box, Card, Grid, TextField, makeStyles } from '@material-ui/core';
-
 import { BACKEND_URL } from 'src/constants';
-import * as session from 'src/modules/session';
 import DefaultPage from 'src/modules/home/components/DefaultPage';
+import * as session from 'src/modules/session';
 
 type Props = RouteComponentProps;
 

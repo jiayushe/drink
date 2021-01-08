@@ -1,10 +1,10 @@
-import * as React from 'react';
 import { Button, Chip, Divider, Grid, Theme, Typography } from '@material-ui/core';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { useDropzone } from 'react-dropzone';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Property } from 'csstype';
 import { Field, FieldProps } from 'formik';
 import { useSnackbar } from 'notistack';
+import * as React from 'react';
+import { useDropzone } from 'react-dropzone';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

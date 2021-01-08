@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import { Redirect, Route, RouteComponentProps, Switch, withRouter } from 'react-router-dom';
-
 import HomeIndex from 'src/modules/home/components/HomeIndex';
 import * as session from 'src/modules/session';
-import SignInPage from 'src/modules/session/components/SignInPage';
 import NewUserPage from 'src/modules/session/components/NewUserPage';
-import TestPage from 'src/modules/test/components/TestPage';
+import SignInPage from 'src/modules/session/components/SignInPage';
 import UpdateUserPage from 'src/modules/session/components/UpdateUserPage';
+import TestPage from 'src/modules/test/components/TestPage';
+
 import AppMainLayout from './AppMainLayout';
 import ErrorBoundary from './ErrorBoundary';
 

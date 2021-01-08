@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect, RouteComponentProps, withRouter } from 'react-router-dom';
-
 import { ApiResponse } from 'src/types';
 import { handleApiRequest } from 'src/utils/ui';
-import SignIn from './SignIn';
+
 import { signIn } from '../operations';
 import { isLoggedIn } from '../selectors';
+import SignIn from './SignIn';
 
 interface OwnProps {
   alert: string;

@@ -1,8 +1,9 @@
-import * as React from 'react';
-import { RouteComponentProps, withRouter } from 'react-router-dom';
-import ReactCrop from 'react-image-crop';
-import { Button, Card, Divider, Grid, Step, Stepper, StepLabel, Typography, makeStyles } from '@material-ui/core';
 import 'react-image-crop/dist/ReactCrop.css';
+
+import { Button, Card, Divider, Grid, makeStyles, Step, StepLabel, Stepper, Typography } from '@material-ui/core';
+import * as React from 'react';
+import ReactCrop from 'react-image-crop';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
   content: {

@@ -1,6 +1,7 @@
 import api from 'src/api';
 import { ApiResponse, Operation } from 'src/types';
 import { UserData } from 'src/types/user';
+
 import * as actions from './actions';
 
 export function signIn(username: string, password: string): Operation<ApiResponse<UserData>> {

@@ -1,4 +1,5 @@
 import { TypographyOptions } from '@material-ui/core/styles/createTypography';
+
 import palette from './palette';
 
 const typographyOptions: TypographyOptions = {

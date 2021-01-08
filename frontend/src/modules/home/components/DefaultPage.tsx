@@ -1,6 +1,6 @@
+import { Button, Card, Grid, makeStyles, Typography } from '@material-ui/core';
 import * as React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { Button, Card, Grid, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   content: {

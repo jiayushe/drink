@@ -1,6 +1,7 @@
 import { ApiPromise } from 'src/types';
 import { UserData } from 'src/types/user';
 import { createFormData } from 'src/utils/formdata-helper';
+
 import BaseAPI from './base';
 
 export interface WithToken {

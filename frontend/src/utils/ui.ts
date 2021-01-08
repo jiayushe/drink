@@ -1,7 +1,6 @@
-import { AnyAction } from 'redux';
 import { hideLoading, showLoading } from 'react-redux-loading-bar';
+import { AnyAction } from 'redux';
 import { ThunkDispatch } from 'redux-thunk';
-
 import { enqueueNotification } from 'src/modules/notifications/operations';
 import { ApiResponse, StatusMessage, StatusMessageType } from 'src/types';
 

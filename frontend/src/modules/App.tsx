@@ -1,3 +1,5 @@
+import './App.css';
+
 import { CssBaseline } from '@material-ui/core';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { StylesProvider } from '@material-ui/styles';
@@ -6,11 +8,10 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import LoadingBar from 'react-redux-loading-bar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
 import AuthenticatedPages from 'src/components/layouts/AuthenticatedPages';
 import Notifier from 'src/modules/notifications/components/Notifier';
 import theme from 'src/theme';
-import './App.css';
+
 import configureStore from './store';
 
 const store = configureStore();

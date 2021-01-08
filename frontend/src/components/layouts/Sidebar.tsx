@@ -9,15 +9,14 @@ import {
   Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Home from '@material-ui/icons/Home';
-import Logout from '@material-ui/icons/ExitToApp';
-import User from '@material-ui/icons/SupervisedUserCircle';
 import Upload from '@material-ui/icons/CloudUpload';
+import Logout from '@material-ui/icons/ExitToApp';
+import Home from '@material-ui/icons/Home';
+import User from '@material-ui/icons/SupervisedUserCircle';
 import clsx from 'clsx';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, NavLinkProps, RouteComponentProps, withRouter } from 'react-router-dom';
-
 import { operations } from 'src/modules/session';
 import { handleApiRequest } from 'src/utils/ui';
 

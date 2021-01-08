@@ -1,8 +1,8 @@
 import axios, { AxiosError, AxiosPromise } from 'axios';
-
 import { ApiPromise, ApiResponse, StatusMessageType } from 'src/types';
-import { csrfToken as initialToken } from './server-context';
+
 import { BACKEND_URL } from './../constants';
+import { csrfToken as initialToken } from './server-context';
 
 const DEFAULT_API_RESPONSE: ApiResponse<{}> = Object.freeze({
   code: -1,

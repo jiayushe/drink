@@ -1,11 +1,11 @@
-import { Formik, FormikProps, FieldArray, Field } from 'formik';
-import * as React from 'react';
-import { ObjectSchema } from 'yup';
-import { Card, Grid, IconButton, MenuItem, TextField, Tooltip, Divider } from '@material-ui/core';
+import { Card, Divider, Grid, IconButton, MenuItem, TextField, Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import CancelIcon from '@material-ui/icons/Cancel';
-import ResetIcon from '@material-ui/icons/SettingsBackupRestoreRounded';
 import TickIcon from '@material-ui/icons/CheckCircle';
+import ResetIcon from '@material-ui/icons/SettingsBackupRestoreRounded';
+import { Field, FieldArray, Formik, FormikProps } from 'formik';
+import * as React from 'react';
+import { ObjectSchema } from 'yup';
 
 import FileUploader from './FileUploader';
 
