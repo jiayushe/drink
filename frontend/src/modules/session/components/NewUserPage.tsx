@@ -14,13 +14,8 @@ const useStyles = makeStyles(() => ({
   content: {
     margin: '0 auto',
     textAlign: 'center',
-    left: '10%',
     paddingTop: '5%',
-    paddingBottom: '5%',
-    width: '80%',
-    position: 'absolute',
-    top: '8%',
-    bottom: '8%'
+    paddingBottom: '5%'
   }
 }));
 

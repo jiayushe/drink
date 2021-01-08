@@ -10,9 +10,9 @@ const palette = {
   },
   primary: {
     contrastText: white,
-    main: blue,
+    main: '#ffa31a',
     light: '#F6F9FD',
-    dark: '#0B48A0'
+    dark: '#1b1b1b'
   },
   secondary: {
     contrastText: white,

@@ -4,27 +4,38 @@ import { Redirect, Route, RouteComponentProps, Switch, withRouter } from 'react-
 
 import HomeIndex from 'src/modules/home/components/HomeIndex';
 import * as session from 'src/modules/session';
-import UpdateUser from 'src/modules/session/components/UpdateUserPage';
+import SignInPage from 'src/modules/session/components/SignInPage';
+import NewUserPage from 'src/modules/session/components/NewUserPage';
+import TestPage from 'src/modules/test/components/TestPage';
+import UpdateUserPage from 'src/modules/session/components/UpdateUserPage';
 import AppMainLayout from './AppMainLayout';
 import ErrorBoundary from './ErrorBoundary';
 
 type Props = RouteComponentProps;
 
 const AuthenticatedPages: React.FC<Props> = (props) => {
-  const loggedIn = useSelector(session.selectors.isLoggedIn);
-  if (!loggedIn) {
-    return <Redirect to={{ pathname: '/login', state: { to: props.location } }} />;
-  }
+  // const loggedIn = useSelector(session.selectors.isLoggedIn);
+  // if (!loggedIn) {
+  //   return <Redirect to={{ pathname: '/login', state: { to: props.location } }} />;
+  // }
 
-  const homeIndexRoute = <Route exact path='/' component={HomeIndex} />;
-  const updateUserRoute = <Route exact path='/user' component={UpdateUser} />;
+  const defaultRoute = <Route exact path='/' component={HomeIndex} />;
+  const homeIndexRoute = <Route exact path='/home' component={HomeIndex} />;
+  const signInRoute = <Route exact path='/signIn' component={SignInPage} />;
+  const signUpRoute = <Route exact path='/signUp' component={NewUserPage} />;
+  const testRoute = <Route exact path='/test' component={TestPage} />;
+  const updateUserRoute = <Route exact path='/user' component={UpdateUserPage} />;
   const catchAllRoute = <Route path='/' render={() => <div>404 Page Not Found</div>} />;
 
   return (
     <AppMainLayout>
       <ErrorBoundary style={{}}>
         <Switch>
+          {defaultRoute}
           {homeIndexRoute}
+          {signInRoute}
+          {signUpRoute}
+          {testRoute}
           {updateUserRoute}
           {catchAllRoute}
         </Switch>

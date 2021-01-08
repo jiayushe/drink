@@ -9,11 +9,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import AuthenticatedPages from 'src/components/layouts/AuthenticatedPages';
 import Notifier from 'src/modules/notifications/components/Notifier';
-import SignInPage from 'src/modules/session/components/SignInPage';
 import theme from 'src/theme';
 import './App.css';
 import configureStore from './store';
-import NewUserPage from './session/components/NewUserPage';
 
 const store = configureStore();
 
@@ -37,8 +35,6 @@ const App: React.FC<{}> = () => {
               <LoadingBar style={loadingBarStyle} updateTime={150} />
               <BrowserRouter>
                 <Switch>
-                  <Route exact path='/login' component={SignInPage} />
-                  <Route exact path='/signup' component={NewUserPage} />
                   <Route path='/' component={AuthenticatedPages} />
                 </Switch>
               </BrowserRouter>

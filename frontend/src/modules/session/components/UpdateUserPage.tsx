@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
+import { Box, Card, Grid, TextField, makeStyles } from '@material-ui/core';
 import * as Yup from 'yup';
 
 import SimpleForm, { FormMetadataType } from 'src/components/SimpleForm';
+import DefaultPage from 'src/modules/home/components/DefaultPage';
 import { UserData } from 'src/types/user';
 import { handleApiRequest } from 'src/utils/ui';
 import { updateUser } from '../operations';
@@ -16,8 +18,8 @@ const UpdateUserPage: React.FC<Props> = ({ history }) => {
   const dispatch = useDispatch();
 
   const values: Partial<UserData> = {
-    name: user!.name!,
-    nickname: user!.nickname!,
+    name: user && user.name ? user.name : '',
+    nickname: user && user.nickname ? user.nickname : '',
     file_helper: ''
   };
 
@@ -31,7 +33,7 @@ const UpdateUserPage: React.FC<Props> = ({ history }) => {
     file_helper: Yup.string().required()
   });
 
-  return (
+  return user ? (
     <SimpleForm
       initialValues={values}
       formMetadata={formMetadata}
@@ -44,6 +46,8 @@ const UpdateUserPage: React.FC<Props> = ({ history }) => {
         });
       }}
     />
+  ) : (
+    <DefaultPage />
   );
 };
 

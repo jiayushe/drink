@@ -6,6 +6,7 @@ import { Box, Card, Grid, TextField, makeStyles } from '@material-ui/core';
 
 import { BACKEND_URL } from 'src/constants';
 import * as session from 'src/modules/session';
+import DefaultPage from 'src/modules/home/components/DefaultPage';
 
 type Props = RouteComponentProps;
 
@@ -33,7 +34,7 @@ const HomeIndex: React.FC<Props> = () => {
   const user = useSelector(session.selectors.getCurrentUser);
   const classes = useStyles();
 
-  return (
+  return user ? (
     <Card className={classes.root}>
       <Grid container spacing={0}>
         <Grid item xs={2}>
@@ -61,6 +62,8 @@ const HomeIndex: React.FC<Props> = () => {
         </Grid>
       </Grid>
     </Card>
+  ) : (
+    <DefaultPage />
   );
 };
 

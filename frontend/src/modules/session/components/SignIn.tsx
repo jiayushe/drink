@@ -7,13 +7,8 @@ const useStyles = makeStyles(() => ({
   content: {
     margin: '0 auto',
     textAlign: 'center',
-    left: '25%',
     paddingTop: '5%',
-    paddingBottom: '5%',
-    width: '50%',
-    position: 'absolute',
-    top: '18%',
-    bottom: '18%'
+    paddingBottom: '5%'
   }
 }));
 
