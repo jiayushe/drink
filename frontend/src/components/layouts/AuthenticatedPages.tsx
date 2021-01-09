@@ -16,7 +16,7 @@ type Props = RouteComponentProps;
 const AuthenticatedPages: React.FC<Props> = (props) => {
   // const loggedIn = useSelector(session.selectors.isLoggedIn);
   // if (!loggedIn) {
-  //   return <Redirect to={{ pathname: '/login', state: { to: props.location } }} />;
+  //   return <Redirect to={{ pathname: '/signin', state: { to: props.location } }} />;
   // }
 
   const defaultRoute = <Route exact path='/' component={HomeIndex} />;

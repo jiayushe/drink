@@ -6,7 +6,7 @@ const initialState: types.NotificationsState = {
   notifications: [
     {
       key: 0,
-      content: 'Welcome to APPNAME!',
+      content: 'Welcome to DRINK!',
       variant: 'success'
     }
   ]

@@ -3,7 +3,7 @@ import { TypographyOptions } from '@material-ui/core/styles/createTypography';
 import palette from './palette';
 
 const typographyOptions: TypographyOptions = {
-  fontFamily: ['East Sea Dokdo'].join(','),
+  fontFamily: ['Inter'].join(','),
   h1: {
     color: palette.text.primary,
     fontWeight: 500,

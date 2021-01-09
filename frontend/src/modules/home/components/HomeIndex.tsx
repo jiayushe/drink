@@ -1,4 +1,4 @@
-import { Box, Card, Grid, makeStyles, TextField } from '@material-ui/core';
+import { Box, Card, Grid, makeStyles, TextField, Typography } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -37,7 +37,7 @@ const HomeIndex: React.FC<Props> = () => {
     <Card className={classes.root}>
       <Grid container spacing={0}>
         <Grid item xs={2}>
-          <img src={BACKEND_URL + user!.profile!.substr(1)} alt='' width='60' height='60' />
+          <img src='/avatar.png' alt='' width='60' height='60' />
         </Grid>
         <Grid item xs={5}>
           <TextField
@@ -59,6 +59,13 @@ const HomeIndex: React.FC<Props> = () => {
             }}
           />
         </Grid>
+      </Grid>
+      <br />
+      <Grid>
+        <Typography variant='h6'>Your Pisstory</Typography>
+      </Grid>
+      <Grid>
+        <img src='/graph.png' alt='' width='1000' />
       </Grid>
     </Card>
   ) : (

@@ -38,7 +38,7 @@ const SignIn: React.FC<OwnProps> = (props) => {
         <Grid container direction='column' justify='center' spacing={3}>
           <Grid item>
             <Typography variant='h4' color='inherit' style={{ height: 40 }}>
-              APPNAME
+              DRINK
             </Typography>
             <Typography variant='h5'>Sign In</Typography>
           </Grid>

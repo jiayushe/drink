@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '63px',
+    height: '200px',
     flexShrink: 0
   },
   logoLink: {
@@ -148,17 +148,17 @@ const Sidebar: React.FC<Props> = (props) => {
   const dispatch = useDispatch();
   const handleSignOut = () => {
     handleApiRequest(dispatch, dispatch(operations.signOut())).then(() => {
-      props.history.push('/login');
+      props.history.push('/signin');
     });
   };
 
   return (
     <nav className={clsx(classes.root, props.className)}>
-      {/* <div className={classes.logoWrapper}>
+      <div className={classes.logoWrapper}>
         <Link className={classes.logoLink} to='/'>
           <img alt='icon' className={classes.logoImage} src='/icon.png' />
         </Link>
-      </div> */}
+      </div>
 
       <Divider className={classes.logoDivider} />
 

@@ -21,11 +21,11 @@ const DefaultPage: React.FC<Props> = ({ history }) => {
       <Grid container direction='column' justify='center' spacing={3}>
         <Grid item>
           <Typography variant='h4' color='inherit' style={{ height: 40 }}>
-            APPNAME
+            DRINK
           </Typography>
         </Grid>
         <Grid item>
-          <Typography>Welcome to APPNAME! Get started with a test or sign in to view your past records!</Typography>
+          <Typography>Welcome to DRINK! Get started with a test or sign in to view your past records!</Typography>
         </Grid>
         <Grid item>
           <Grid container direction='row' justify='center' spacing={3}>
